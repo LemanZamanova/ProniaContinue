@@ -3,7 +3,7 @@ using Pronia.Models.Base;
 
 
 
-namespace Pronia.Models.Size
+namespace Pronia.Models
 {
     public class Size : BaseEntity
     {

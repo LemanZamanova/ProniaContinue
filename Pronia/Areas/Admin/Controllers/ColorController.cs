@@ -1,7 +1,7 @@
-﻿using System.Drawing;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Pronia.DAL;
+using Pronia.Models;
 
 namespace Pronia.Areas.Admin.Controllers
 {

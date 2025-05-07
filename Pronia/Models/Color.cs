@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using Pronia.Models.Base;
 
-namespace Pronia.Models.Color
+namespace Pronia.Models
 
 {
     public class Color : BaseEntity

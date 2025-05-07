@@ -1,5 +1,4 @@
-﻿using System.Drawing;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Pronia.Models;
 
 namespace Pronia.DAL

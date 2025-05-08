@@ -9,20 +9,20 @@ using Pronia.ViewModels.Slides;
 namespace Pronia.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    public class SlideController : Controller
+    public class SliderController : Controller
 
     {
         private readonly AppDbContext _context;
         private readonly IWebHostEnvironment _env;
 
-        public SlideController(AppDbContext context, IWebHostEnvironment env)
+        public SliderController(AppDbContext context, IWebHostEnvironment env)
         {
             _context = context;
             _env = env;
         }
         public async Task<IActionResult> Index()
         {
-            List<GetSlideVM> slideVMs = await _context.Slides.Select(s =>
+            List<GetSlideVM> slideVm = await _context.Slides.Select(s =>
 
                 new GetSlideVM
                 {
@@ -35,7 +35,7 @@ namespace Pronia.Areas.Admin.Controllers
                 }
             ).ToListAsync();
 
-            return View(slideVMs);
+            return View(slideVm);
         }
         public IActionResult Create()
         {

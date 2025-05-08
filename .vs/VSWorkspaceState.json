@@ -4,8 +4,12 @@
     "\\Pronia",
     "\\Pronia\\Areas",
     "\\Pronia\\Areas\\Admin",
-    "\\Pronia\\Areas\\Admin\\Controllers"
+    "\\Pronia\\Areas\\Admin\\Controllers",
+    "\\Pronia\\Areas\\Admin\\Views",
+    "\\Pronia\\Areas\\Admin\\Views\\Category",
+    "\\Pronia\\Utilities",
+    "\\Pronia\\Utilities\\Enums"
   ],
-  "SelectedNode": "\\Pronia\\Areas\\Admin\\Controllers\\SizeController.cs",
+  "SelectedNode": "\\Pronia\\Areas\\Admin\\Controllers\\HomeController.cs",
   "PreviewInSolutionExplorer": false
 }

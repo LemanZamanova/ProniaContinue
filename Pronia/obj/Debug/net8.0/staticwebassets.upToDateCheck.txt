@@ -202,7 +202,6 @@ wwwroot\assets\images\website-images\1-1170x300.jpg
 wwwroot\assets\images\website-images\1-1-1820x443.jpg
 wwwroot\assets\images\website-images\1-1-270x300.jpg
 wwwroot\assets\images\website-images\1-1-310x220.jpg
-wwwroot\assets\images\website-images\1-1-524x617.png
 wwwroot\assets\images\website-images\1-1-570x633.jpg
 wwwroot\assets\images\website-images\1-1-768x546.webp
 wwwroot\assets\images\website-images\1-1-770x300.jpg
@@ -239,10 +238,17 @@ wwwroot\assets\images\website-images\2-2-370x270.webp
 wwwroot\assets\images\website-images\2-2-70x78.png
 wwwroot\assets\images\website-images\2-3-70x78.png
 wwwroot\assets\images\website-images\3.png
+wwwroot\assets\images\website-images\34765-1335.jpg
+wwwroot\assets\images\website-images\63839A.webp
 wwwroot\assets\images\website-images\bitki.jpg
 wwwroot\assets\images\website-images\car.png
 wwwroot\assets\images\website-images\card.png
 wwwroot\assets\images\website-images\dark.png
+wwwroot\assets\images\website-images\DETA-384__16768.jpg
+wwwroot\assets\images\website-images\il_570xN.6373363571_dhjd.webp
+wwwroot\assets\images\website-images\images (1).jpg
+wwwroot\assets\images\website-images\images (2).jpg
+wwwroot\assets\images\website-images\images.jpg
 wwwroot\assets\images\website-images\pink.jpg
 wwwroot\assets\images\website-images\qizilgull.jpg
 wwwroot\assets\images\website-images\qizilgulw.jpg

@@ -38,7 +38,7 @@ namespace Pronia.Areas.Admin.Controllers
 
             }
             size.CreatedAt = DateTime.Now;
-            await _context.AddAsync(size);
+            await _context.Sizes.AddAsync(size);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
@@ -69,6 +69,14 @@ namespace Pronia.Areas.Admin.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id is null || id < 1) return BadRequest();
+            Size? size = await _context.Sizes.FirstOrDefaultAsync(s => s.Id == id);
+            if (size is null) return NotFound();
+            _context.Remove(size);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
     }
 }

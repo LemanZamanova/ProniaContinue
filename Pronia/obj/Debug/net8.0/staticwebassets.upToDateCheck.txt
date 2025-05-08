@@ -227,7 +227,6 @@ wwwroot\assets\images\website-images\1-4-570x633.jpg
 wwwroot\assets\images\website-images\1-4-770x300.jpg
 wwwroot\assets\images\website-images\1-5.png
 wwwroot\assets\images\website-images\1-5-270x300.jpg
-wwwroot\assets\images\website-images\1-6-270x300.jpg
 wwwroot\assets\images\website-images\1-7-270x300.jpg
 wwwroot\assets\images\website-images\1-8-270x300.jpg
 wwwroot\assets\images\website-images\1-9-270x300.jpg
@@ -240,6 +239,7 @@ wwwroot\assets\images\website-images\2-3-70x78.png
 wwwroot\assets\images\website-images\3.png
 wwwroot\assets\images\website-images\34765-1335.jpg
 wwwroot\assets\images\website-images\63839A.webp
+wwwroot\assets\images\website-images\6af693b0-a1a3-42d6-9172-d1f4ea8fc20b.jpg
 wwwroot\assets\images\website-images\bitki.jpg
 wwwroot\assets\images\website-images\car.png
 wwwroot\assets\images\website-images\card.png

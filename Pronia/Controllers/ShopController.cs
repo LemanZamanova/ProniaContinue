@@ -18,6 +18,7 @@ namespace Pronia.Controllers
         {
             return View();
         }
+        [HttpGet("Details")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id is null || id <= 0)

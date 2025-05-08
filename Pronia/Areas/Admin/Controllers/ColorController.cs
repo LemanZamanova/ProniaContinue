@@ -67,5 +67,18 @@ namespace Pronia.Areas.Admin.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+
+
+        [HttpPost]
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id is null || id < 1) return BadRequest();
+            Color? color = await _context.Colors.FirstOrDefaultAsync(c => c.Id == id);
+            if (color is null) return NotFound();
+            _context.Colors.Remove(color);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+
     }
 }

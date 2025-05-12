@@ -22,9 +22,9 @@ namespace Pronia.Areas.Admin.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            List<GetSlideVM> slideVm = await _context.Slides.Select(s =>
+            List<GetSliderVM> slideVm = await _context.Slides.Select(s =>
 
-                new GetSlideVM
+                new GetSliderVM
                 {
                     Id = s.Id,
                     Title = s.Title,
@@ -43,22 +43,22 @@ namespace Pronia.Areas.Admin.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(CreateSlideVM slideVM)
+        public async Task<IActionResult> Create(CreateSliderVM slideVM)
         {
             if (!slideVM.Photo.ValidateType("image/"))
             {
-                ModelState.AddModelError(nameof(CreateSlideVM.Photo), "File type is incorrect");
+                ModelState.AddModelError(nameof(CreateSliderVM.Photo), "File type is incorrect");
                 return View();
             }
             if (!slideVM.Photo.ValidateSize(FileSize.MB, 2))
             {
-                ModelState.AddModelError(nameof(CreateSlideVM.Photo), "File size sould be less than 2MB");
+                ModelState.AddModelError(nameof(CreateSliderVM.Photo), "File size sould be less than 2MB");
                 return View();
             }
             bool result = await _context.Slides.AnyAsync(s => s.Order == slideVM.Order);
             if (result)
             {
-                ModelState.AddModelError(nameof(CreateSlideVM.Order), $"{slideVM.Order} This order value already exists");
+                ModelState.AddModelError(nameof(CreateSliderVM.Order), $"{slideVM.Order} This order value already exists");
                 return View();
             }
             string fileName = await slideVM.Photo.CreateFileAsync(_env.WebRootPath, "assets", "images", "website-images");

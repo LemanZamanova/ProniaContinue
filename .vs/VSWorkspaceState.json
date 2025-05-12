@@ -7,9 +7,10 @@
     "\\Pronia\\Areas\\Admin\\Controllers",
     "\\Pronia\\Areas\\Admin\\Views",
     "\\Pronia\\Areas\\Admin\\Views\\Category",
+    "\\Pronia\\Controllers",
     "\\Pronia\\Utilities",
     "\\Pronia\\Utilities\\Enums"
   ],
-  "SelectedNode": "\\Pronia\\Areas\\Admin\\Controllers\\HomeController.cs",
+  "SelectedNode": "\\Pronia\\appsettings.json",
   "PreviewInSolutionExplorer": false
 }

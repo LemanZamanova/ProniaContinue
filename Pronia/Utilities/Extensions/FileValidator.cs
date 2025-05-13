@@ -1,9 +1,15 @@
 ﻿using Pronia.Utilities.Enums;
+
+
+
+
+
 namespace Pronia.Utilities.Extensions
 {
     public static class FileValidator
 
     {
+
         public static bool ValidateType(this IFormFile file, string type)
         {
             return file.ContentType.Contains(type);
@@ -57,6 +63,7 @@ namespace Pronia.Utilities.Extensions
             }
             return path;
         }
-    }
 
+    }
 }
+

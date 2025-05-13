@@ -86,5 +86,52 @@ namespace Pronia.Areas.Admin.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+        public async Task<IActionResult> Update(int? id)
+        {
+            if (id is null || id < 1) return BadRequest();
+            Slider? slider = await _context.Slides.FirstOrDefaultAsync(s => s.Id == id);
+            if (slider is null) return NotFound();
+            UpdateSliderVM sliderVM = new UpdateSliderVM
+            {
+                Description = slider.Description,
+                Title = slider.Title,
+                Order = slider.Order,
+                SubTitle = slider.SubTitle,
+                Image = slider.Image,
+            };
+            return View(sliderVM);
+        }
+        [HttpPost]
+        public async Task<IActionResult> Update(int? id, UpdateSliderVM slideVM)
+        {
+            if (!ModelState.IsValid) return View(slideVM);
+            Slider? existed = await _context.Slides.FirstOrDefaultAsync(s => s.Id == id);
+            if (existed is null) return NotFound();
+            if (slideVM.Photo is not null)
+            {
+                if (!slideVM.Photo.ValidateType("image/"))
+                {
+                    ModelState.AddModelError(nameof(UpdateSliderVM.Photo), "File type is incorrect");
+                    return View(slideVM);
+                }
+                if (!slideVM.Photo.ValidateSize(FileSize.MB, 2))
+                {
+                    ModelState.AddModelError(nameof(UpdateSliderVM.Photo), "File size must be less than 2MB");
+                    return View(slideVM);
+
+                }
+                string fileName = await slideVM.Photo.CreateFileAsync(_env.WebRootPath, "assets", "images", "website-images");
+                existed.Image.DeleteFile(_env.WebRootPath, "assets", "images", "website-images");
+                existed.Image = fileName;
+            }
+            existed.Title = slideVM.Title;
+            existed.SubTitle = slideVM.SubTitle;
+            existed.Description = slideVM.Description;
+            existed.Order = slideVM.Order;
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Index");
+        }
+
+
     }
 }

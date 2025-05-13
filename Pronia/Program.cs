@@ -1,5 +1,7 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Pronia.DAL;
+using Pronia.Models;
 
 namespace Pronia
 {
@@ -10,6 +12,16 @@ namespace Pronia
             var builder = WebApplication.CreateBuilder(args);
 
             builder.Services.AddControllersWithViews();
+            builder.Services.AddIdentity<AppUser, IdentityRole>(opt =>
+            {
+                opt.Password.RequiredLength = 8;
+                opt.Password.RequireNonAlphanumeric = false;
+                opt.User.RequireUniqueEmail = false;
+                opt.Lockout.MaxFailedAccessAttempts = 5;
+                opt.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
+            }).AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
+
+
             builder.Services.AddDbContext<AppDbContext>(opt =>
             {
                 //opt.UseSqlServer(builder.Configuration["ConnectionStrings:Default"]);

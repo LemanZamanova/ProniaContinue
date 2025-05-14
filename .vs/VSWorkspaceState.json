@@ -4,13 +4,15 @@
     "\\Pronia",
     "\\Pronia\\Areas",
     "\\Pronia\\Areas\\Admin",
-    "\\Pronia\\Areas\\Admin\\Controllers",
     "\\Pronia\\Areas\\Admin\\Views",
-    "\\Pronia\\Areas\\Admin\\Views\\Category",
     "\\Pronia\\Controllers",
+    "\\Pronia\\Models",
     "\\Pronia\\Utilities",
-    "\\Pronia\\Utilities\\Enums"
+    "\\Pronia\\Utilities\\Enums",
+    "\\Pronia\\Views",
+    "\\Pronia\\Views\\Account",
+    "\\Pronia\\Views\\Shop"
   ],
-  "SelectedNode": "\\Pronia.sln",
+  "SelectedNode": "\\Pronia\\Views\\Account\\Register.cshtml",
   "PreviewInSolutionExplorer": false
 }

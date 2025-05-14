@@ -125,12 +125,26 @@
                                             </button>
                                             <ul class="dropdown-menu"
                                                 aria-labelledby="settingButton">
-                                                <li>
-                                                    <a class="dropdown-item" href="my-account.html">My account</a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="login-register.html">Login | Register</a>
-                                                </li>
+
+                                                @if (User.Identity.IsAuthenticated)
+                                                {
+                                                    <li>
+                                                        <a class="dropdown-item" href="my-account.html">@User.Identity.Name</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" asp-controller="Account" asp-action="Logout"> Log out</a>
+                                                    </li>
+                                                }
+                                                else
+                                                {
+
+                                                    <li>
+                                                        <a class="dropdown-item" asp-controller="Account" asp-action="Login" asp-route-returnUrl="@Context.Request.Path.Value">Log in</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" asp-controller="Account" asp-action="Register">Register</a>
+                                                    </li>
+                                                }
                                             </ul>
                                         </li>
                                         <li class="d-none d-lg-block">
@@ -893,7 +907,7 @@
             </div>
             <div class="global-overlay"></div>
         </header>
-        <!-- Main Header Area End Here --> 
+        <!-- Main Header Area End Here -->
         @RenderBody()
         <!-- Begin Footer Area -->
         <div class="footer-area"

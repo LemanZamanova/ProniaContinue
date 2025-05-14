@@ -239,6 +239,7 @@ wwwroot\assets\images\website-images\2-3-70x78.png
 wwwroot\assets\images\website-images\3.png
 wwwroot\assets\images\website-images\34765-1335.jpg
 wwwroot\assets\images\website-images\57977b66-a2d2-43b1-90c3-d0f01d0fc1ec.webp
+wwwroot\assets\images\website-images\5fd26200-bf31-47a6-b286-c278e656e61e.png
 wwwroot\assets\images\website-images\63839A.webp
 wwwroot\assets\images\website-images\6af693b0-a1a3-42d6-9172-d1f4ea8fc20b.jpg
 wwwroot\assets\images\website-images\bitki.jpg

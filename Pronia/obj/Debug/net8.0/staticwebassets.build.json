@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1fdzNav+J9ZjlI/WhzvRUVKDA05mGgKPvA42HayxTPQ=",
+  "Hash": "3vgCd64xnm8oAHUdaSXbCTcyeXMmxvLNR9hD/GsVHtE=",
   "Source": "Pronia",
   "BasePath": "_content/Pronia",
   "Mode": "Default",
@@ -5076,6 +5076,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\website-images\\57977b66-a2d2-43b1-90c3-d0f01d0fc1ec.webp"
+    },
+    {
+      "Identity": "C:\\Users\\HOME\\OneDrive\\Desktop\\Pronia\\ProniaContinue\\Pronia\\wwwroot\\assets\\images\\website-images\\5fd26200-bf31-47a6-b286-c278e656e61e.png",
+      "SourceId": "Pronia",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HOME\\OneDrive\\Desktop\\Pronia\\ProniaContinue\\Pronia\\wwwroot\\",
+      "BasePath": "_content/Pronia",
+      "RelativePath": "assets/images/website-images/5fd26200-bf31-47a6-b286-c278e656e61e#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ddtjv49ym3",
+      "Integrity": "j8VuGsWDJLXCmrBsur0tdSXf6EhYtv2jWoaT96x0dGk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\website-images\\5fd26200-bf31-47a6-b286-c278e656e61e.png"
     },
     {
       "Identity": "C:\\Users\\HOME\\OneDrive\\Desktop\\Pronia\\ProniaContinue\\Pronia\\wwwroot\\assets\\images\\website-images\\63839A.webp",
@@ -26203,6 +26224,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-5lGAp0Cnf6VERSj7XPYDdoUCmg8dtavgyargTl3g9qc="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/website-images/5fd26200-bf31-47a6-b286-c278e656e61e.ddtjv49ym3.png",
+      "AssetFile": "C:\\Users\\HOME\\OneDrive\\Desktop\\Pronia\\ProniaContinue\\Pronia\\wwwroot\\assets\\images\\website-images\\5fd26200-bf31-47a6-b286-c278e656e61e.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4078"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j8VuGsWDJLXCmrBsur0tdSXf6EhYtv2jWoaT96x0dGk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 06:42:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ddtjv49ym3"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/images/website-images/5fd26200-bf31-47a6-b286-c278e656e61e.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-j8VuGsWDJLXCmrBsur0tdSXf6EhYtv2jWoaT96x0dGk="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/website-images/5fd26200-bf31-47a6-b286-c278e656e61e.png",
+      "AssetFile": "C:\\Users\\HOME\\OneDrive\\Desktop\\Pronia\\ProniaContinue\\Pronia\\wwwroot\\assets\\images\\website-images\\5fd26200-bf31-47a6-b286-c278e656e61e.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4078"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j8VuGsWDJLXCmrBsur0tdSXf6EhYtv2jWoaT96x0dGk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 06:42:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-j8VuGsWDJLXCmrBsur0tdSXf6EhYtv2jWoaT96x0dGk="
         }
       ]
     },
